@@ -21,7 +21,7 @@ var yelpUrl = 'https://api.yelp.com/v2/search/';
 var searchForEnchiladas = '?term=enchiladas&location=New York, NY&limit=10&radius_filter=500&category_filter=mexican';
 
 var requestDataForSigning = {
-    url: yelpUrl + searchForEnchiladas,
+    url: CORSRestrictionAvoidanceHack + yelpUrl + searchForEnchiladas,
     method: 'GET'
 };
 
